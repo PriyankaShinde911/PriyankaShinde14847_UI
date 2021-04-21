@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* background-color: #333; */
+        position: -webkit-sticky; 
+        position: sticky;
+        top: 0;
+    }
+
+
+    li a:not(.logo) {
+                    text-decoration: none;
+                    padding: .2em 1em;
+                    color: #fff;
+                    background-color: #036;
+    }
+
+    li {
+        float:left;
+    }
+
+    h1 { 
+        display: block;
+        font-size: 1.5em;
+        margin-top: 0.83em;
+        margin-bottom: 0.83em;
+        margin-left: 0;
+        margin-right: 0;
+        font-weight: bold;
+        text-align:left;
+        color: tomato;
+    }
+ 
+    /*p{
+        text-align: center;
+    } */
+
+    aside {
+            /* width: 30%;
+            padding-left: 15px;
+            margin-left: 15px; */
+            float: right;
+    }
+    .container {
+                display: inline-flex;
+                padding: 20px 40px 40px;
+                /* max-width: 640px;  */
+                &__image {
+                    display: inline-block;
+                    vertical-align: top;
+                    /* margin: 20px 30px 0 0; */
+                }
+                &__text {
+                        display: inline-block;
+                }
+    }
+
+    .slide-wrap a{
+                background-color: white;
+                color: black;
+                border: 2px solid #036;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+    }
+
+    .slider {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;  
+
+    }
+
+    .slide {
+            width: 100%;
+            flex-shrink: 0;
+            height: 100%;
+            
+    }
+            
+    * {
+        box-sizing: border-box;
+    }
+
+    .column {
+            float: left;
+            width: 16.66%;
+            padding: 5px;
+    }
+
+    .row::after {
+                content: "";
+                clear: both;
+                display: table;
+    }
+
+</style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a class="logo" href="file:///C:/Users/Priyank14847/Desktop/Priyanka/HTML/prac1.html">
+                <img src="images/MastekLogo.png" width="150" height="60" ></a>
+        </li>
+        <li>
+            <a href="#home" >HOME</a>
+        </li>
+        <li>
+            <a href="#firststeps" >FIRST STEPS</a>
+        </li>
+        <li>
+            <a href="#values" >VALUES</a>
+        </li>
+        <li>
+            <a href="#" >GLOBAL PRESENCE</a>
+        </li>
+        <li>
+            <a href="#" >LEARNING AVENUES</a>
+        </li>
+        <li>
+            <a href="#ourcustomers" >OUR CUSTOMERS</a>
+        </li>
+        <li>
+            <a href="#" >MASTEK EVENTS</a>
+        </li>
+    </ul>
+
+    </br>
+    </br>
+    <center>
+        <img id="home" src="images/mastekimage.jpg"  height="350" style="max-width: 100%;">
+    </center>
+
+    <div id="firststeps" class="slide-wrap">
+        
+        <a href="#setupmyworkstation">SETUP MY WORKSTATION</a>
+        <a href="#myofficetimelines">MY OFFICE TIMELINES</a>
+            
+        
+        <div class="slider">
+            <div class="slide" id="setupmyworkstation">
+                <h1>SETUP MY WORKSTATION</h1>
+                <aside>
+                    <img src="images/lappy.png" width="250" height="200">
+                </aside>
+                <p>
+                        To ease your integration into the Mastek family,we have dedicated teams of in-house staff and</br>
+                        IT professionals across all locations who not only assist you in finding the right spot for </br>
+                        your workstation but also help you set up the desktop and work to seamlessly resolve all </br>
+                        technical issues.</br>
+                        To Setup your desktop please connect the access points below at respective locations or raise a</br>
+                        call using the link given below:</br>
+
+                        Mahape	: +91 22 6791 4646	Extn : 4505/6   </br> 
+                </p>
+            </div>
+                
+            <div class="slide" id="myofficetimelines">
+                <h1>MY OFFICE TIMELINES</h1>
+                <P>
+                        At Mastek, we recognise your potential to be an excellent self-managed professional. </br>
+                        Our flextime policy empowers you with the ability to choose your work timings and plan </br>
+                        holidays without approvals. You can alter your workday start and finish time as long as</br>
+                        it doesn?t interfere with a ?core? period of the day when you are required to be at work. </br>
+                        In a week, you will be required to complete 43 hours and 45 min of work (at your own pace).</br>
+                        The total number of leaves allocated for a year is 26. And oh! You also get a complimentary</br>
+                        off on your Birthday.</br>
+
+                </P>
+            </div>
+            
+        </div>
+        
+        <div id="values" class="container">
+            <img class="container__image" src="images/featureslid1_CEO03.jpg" width="470" height="340">
+
+            <div class="container__text">
+                <h1>CEO AWARDS</h1>
+                <p>
+                    This is a Performance Excellence Award given to Mastekeers who demonstrate exemplary</br>
+                    performance while staying true to Mastek?s value system (PACTS- Passionate, Accountable,</br>
+                    Collaborative, Transparent and Sustainable).</br>
+                    The award given is a combination of Monetary and Experiential reward.Monetary Reward:</br>
+                    Recipient is given a sum of Rs. 25,000/- </br>
+                    Experiential Reward:</br>
+                    A Mercedes Benz Car is arranged for the winner?s pick and drop on the day of the event.</br>
+                    In case the recipient is onsite, arrangements are made for them to travel to Mumbai </br>
+                    from UK/US in Business class to attend the Award ceremony.</br>
+                </p>
+            </div>
+        </div>
+
+        <div id="ourcustomers" class="row">
+            <h1>OUR CUSTOMERS</h1>
+            <div class="column">
+                <a href="https://www.mastek.com/case-studies/ipf"><img src="images/Customer1.png" style="width:100%"> </a>
+            </div>
+            <div class="column">
+                <a href="https://www.mastek.com/case-studies/morrisons"><img src="images/Customer2.png" style="width:100%"></a>
+            </div>
+            <div class="column">
+                <a href="https://www.mastek.com/case-studies/together"><img src="images/clogo3.png" style="width:100%"></a>
+            </div>
+            <div class="column">
+                <a href="https://www.mastek.com/case-studies/home-office"><img src="images/clogo4.png" style="width:100%"> </a>
+            </div>
+            <div class="column">
+                <a href="https://www.mastek.com/case-studies/nhs-digital"><img src="images/clogo5.png" style="width:100%"></a>
+            </div>
+            <div class="column">
+                <a href="https://www.mastek.com/case-studies/national-health-service-information-provider-1"><img src="images/clogo6.png" style="width:100%"></a>
+            </div>
+        </div>
+
+</body>
+
+</html>
+
+
